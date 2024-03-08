@@ -184,6 +184,7 @@ header{
     position: relative;
     width: 100%;
     animation: inputAnimationHero .5s ease-in-out 1 forwards;
+    z-index: -100;
 }
 
 @keyframes inputAnimationHero {
