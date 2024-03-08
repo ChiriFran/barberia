@@ -30,6 +30,18 @@ body{
     justify-content: space-around;
     width: 100%;
     margin: 0.5rem 0 0 0;
+    animation: inputAnimation .5s ease-in-out 1 forwards;
+}
+
+@keyframes inputAnimation {
+    from{
+        scale: 90%;
+        filter: blur(5px);
+    }
+    to{
+        scale: 100%;
+        filter: blur(0);
+    }
 }
 
 #welcome p{
@@ -69,6 +81,7 @@ header{
     justify-content: center;
     width: 100%;
     height: auto;
+    animation: inputAnimation .5s ease-in-out 1 forwards;
 }
 
 
@@ -170,6 +183,16 @@ header{
 .heroSlidesContainer {
     position: relative;
     width: 100%;
+    animation: inputAnimationHero .5s ease-in-out 1 forwards;
+}
+
+@keyframes inputAnimationHero {
+    from{
+        filter: blur(5px);
+    }
+    to{
+        filter: blur(0);
+    }
 }
 
 .heroMySlides {
@@ -203,10 +226,31 @@ main{
     justify-content: center;
 }
 
+.scroll{
+    animation: scroollEffect ease-in-out 1 forwards;
+}
+
+@keyframes scroollEffect {
+    from{
+        opacity: 0.5;
+        scale: 60%;
+    }
+    70%{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
 #contacto{
     background-color: var(--colorTittle);
     padding: 2rem 2rem;
     margin: 5rem 0;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: scroollEffect;
 }
 
 #contacto a{
@@ -239,6 +283,12 @@ main{
     width: 40%;
     margin-bottom: 5rem;
     background-color: var(--colorBase);
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: scroollEffect;
 }
 
 #sobreNosotros h2{
@@ -267,6 +317,12 @@ main{
     grid-template-rows: repeat(2, 1fr);
 
     width: 60%;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: scroollEffect;
 }
 
 #servicios ul li{
@@ -294,13 +350,20 @@ main{
     position: relative;
     width: 80%;
     margin-top: 3rem;
+
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: scroollEffect;
 }
 
 .mySlides {
     width: 100%;
     display: none;
     animation: fadeEffect 1.5s;
-    filter: brightness(80%);
+    filter: brightness(90%);
     transition: 1s;
 }
 
@@ -327,6 +390,13 @@ to {opacity: 1}
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     margin: 1rem 0 3rem;
+
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: scroollEffect;
 }
 
 .gridItem{
@@ -402,6 +472,12 @@ to {opacity: 1}
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     margin-top: 3rem;
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: scroollEffect;
 }
 
 #map iframe{
