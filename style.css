@@ -15,7 +15,7 @@
     --colorBase:rgb(0, 0, 0);
     --color: linear-gradient(167deg, rgba(40,40,40,1) 0%, rgba(79,79,79,1) 51%, rgba(128,128,128,1) 80%, rgba(172,172,172,1) 90%, rgba(195,195,195,1) 93%, rgba(255,255,255,1) 100%);
     --colorText:rgb(230, 195, 22);
-    --colorTittle:rgb(245, 245, 245);
+    --colorTitle:rgb(245, 245, 245);
 }
 
 body{
@@ -45,7 +45,7 @@ body{
 }
 
 #welcome p{
-    color: var(--colorTittle);
+    color: var(--colorTitle);
     filter: brightness(60%);
 }
 
@@ -115,7 +115,7 @@ header{
 
 .navList li a{
     text-decoration: none;
-    color: var(--colorTittle);
+    color: var(--colorTitle);
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 4px;
@@ -163,7 +163,7 @@ header{
     letter-spacing: 3px;
     margin: 0.5rem 0.5rem;
     transition: .2s;
-    color: var(--colorTittle);
+    color: var(--colorTitle);
 }
 
 #intro h2{
@@ -242,7 +242,7 @@ main{
 }
 
 #contacto{
-    background-color: var(--colorTittle);
+    background-color: var(--colorTitle);
     padding: 2rem 2rem;
     margin: 5rem 0;
 
@@ -297,18 +297,18 @@ main{
     color: var(--colorBase);
     margin: 2rem 0;
     padding: 1rem 1rem;
-    background-color: var(--colorTittle);
+    background-color: var(--colorTitle);
 }
 
 #sobreNosotros p{
     font-size: clamp( 1.2rem, 2vw, 1.5rem);
-    color: var(--colorTittle);
+    color: var(--colorTitle);
     text-align: center;
     margin-top: 1rem;
 }
 
 #servicios{
-    color: var(--colorTittle);
+    color: var(--colorTitle);
     margin: 0 0 3rem;
     padding-top: 5rem;
 
@@ -338,7 +338,7 @@ main{
     margin: 0.5rem 0;
     padding: 0.5rem 2rem;
     color: var(--colorBase);
-    background-color: var(--colorTittle);
+    background-color: var(--colorTitle);
 }
 
 #servicios p{
@@ -491,7 +491,7 @@ to {opacity: 1}
 }
 
 #infoContact, #formContact{
-    color: var(--colorTittle);
+    color: var(--colorTitle);
     padding: 0 0 2rem;
 }
 
@@ -515,7 +515,7 @@ to {opacity: 1}
     margin-left: 1rem;
     margin-bottom: 1rem;
     padding: 1rem 1rem;
-    background-color: var(--colorTittle);
+    background-color: var(--colorTitle);
     color: var(--colorBase);
 }
 
@@ -575,14 +575,14 @@ to {opacity: 1}
 }
 
 #formContact input:last-child{
-    color: var(--colorTittle);
+    color: var(--colorTitle);
     background-color: var(--colorBase);
-    border: 1px solid var(--colorTittle);
+    border: 1px solid var(--colorTitle);
 }
 
 #formContact input:last-child:hover{
     color: var(--colorBase);
-    background-color: var(--colorTittle);
+    background-color: var(--colorTitle);
 }
 
 #formContact label{
@@ -598,7 +598,7 @@ to {opacity: 1}
 }
 
 #footer h4{
-    color: var(--colorTittle);
+    color: var(--colorTitle);
     letter-spacing: 1px;
     font-size: clamp(0.8rem, 2vw, 1rem);
 }
@@ -666,11 +666,11 @@ to {opacity: 1}
     }
 
     .abrirMenu{
-        color: var(--colorTittle);
+        color: var(--colorTitle);
     }
 
     .cerrarMenu{
-        color: var(--colorTittle);
+        color: var(--colorTitle);
     }
 
     .nav{
@@ -705,7 +705,7 @@ to {opacity: 1}
     }
 
     .navList li a{
-        color: var(--colorTittle);
+        color: var(--colorTitle);
     }
 
     #logoImg img{
