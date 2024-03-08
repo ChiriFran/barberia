@@ -741,8 +741,12 @@ to {opacity: 1}
 
     #sobreNosotros{
         width: 70%;
+    }    
+        
+    #sobreNosotros p{
+        text-align: start;
     }
-    
+
     #servicios{
         margin: 3rem 0;
 
@@ -752,7 +756,6 @@ to {opacity: 1}
 
         width: 70%;
     }
-
     #servicios p{
         text-align: center;
     }
