@@ -15,7 +15,7 @@
     --colorBase:rgb(0, 0, 0);
     --color: linear-gradient(167deg, rgba(40,40,40,1) 0%, rgba(79,79,79,1) 51%, rgba(128,128,128,1) 80%, rgba(172,172,172,1) 90%, rgba(195,195,195,1) 93%, rgba(255,255,255,1) 100%);
     --colorText:rgb(230, 195, 22);
-    --colorTittle:rgb(218, 218, 218);
+    --colorTittle:rgb(245, 245, 245);
 }
 
 body{
