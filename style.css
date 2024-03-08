@@ -46,13 +46,21 @@ body{
 #welcome ul li{
     list-style: none;
     margin: 0 0.3rem;
+    transition: .4s;
 }
+
+#welcome ul li:hover{ 
+    transform: translateY(3px);
+    transition: .2s;
+}
+
 
 .welcomeImg{
     width: 30px;
     height: 30px;
     border-radius: 100%;
 }
+
 
 header{
     display: flex;
@@ -112,6 +120,18 @@ header{
     animation: tittleAnimation 3s linear infinite;
 }
 
+@keyframes tittleAnimation {
+    0%{
+        background-position:  0% 75%;
+    }
+    50%{
+        background-position:  100% 25%;
+    }
+    100%{
+        background-position:  0% 75%;
+    }
+}
+
 .abrirMenu,
 .cerrarMenu{
     display: none;
@@ -129,6 +149,7 @@ header{
     font-weight: 900;
     letter-spacing: 3px;
     margin: 0.5rem 0.5rem;
+    transition: .2s;
     color: var(--colorTittle);
 }
 
@@ -146,26 +167,33 @@ header{
     animation: tittleAnimation 3s linear infinite;
 }
 
-@keyframes tittleAnimation {
-    0%{
-        background-position:  0% 75%;
-    }
-    50%{
-        background-position:  100% 25%;
-    }
-    100%{
-        background-position:  0% 75%;
-    }
+.heroSlidesContainer {
+    position: relative;
+    width: 100%;
 }
 
-#hero{
+.heroMySlides {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    display: none;
+    animation: heroFadeEffect 1.5s;
+    filter: brightness(50%);
+    transition: 1s;
 }
 
-#hero img{
+.heroMySlides:hover{
+    filter: brightness(90%);
+    transition: .8s;
+}
+
+.heroMySlides img{
     width: 100%;
-    height: 100%;
+    height: 85vh;
+}
+
+@keyframes heroFadeEffect {
+from {opacity: 0} 
+to {opacity: 1}
 }
 
 main{
@@ -262,7 +290,7 @@ main{
     margin: 0.5rem 0 2rem;
 }
 
-.slideshow-container {
+.slidesContainer {
     position: relative;
     width: 80%;
     margin-top: 3rem;
@@ -273,12 +301,12 @@ main{
     display: none;
     animation: fadeEffect 1.5s;
     filter: brightness(80%);
-    transition: .4s;
+    transition: 1s;
 }
 
 .mySlides:hover{
     filter: brightness(100%);
-    transition: .2s;
+    transition: .5s;
 }
 
 .mySlides img{
@@ -309,13 +337,13 @@ to {opacity: 1}
     width: 100%;
     height: 100%;
     filter: brightness(80%);
-    transition: .4s;
+    transition: 1s;
 }
 
 .gridItem img:hover{
     filter: brightness(100%);
-    transition: .2s;
-    animation: imgScale 10s ease-in-out infinite forwards;
+    transition: .5s;
+    animation: imgScale 3s ease-in 1 forwards;
 }
 
 @keyframes imgScale {
@@ -323,7 +351,7 @@ to {opacity: 1}
     transform: scale(1);
   } 
   80%{
-    transform: scale(1.1);
+    transform: scale(1.05);
   } 
 }
 
@@ -613,13 +641,21 @@ to {opacity: 1}
         display: block;
     }
 
-    #hero{
+/*     #hero{
         height: 70vh;
         margin-bottom: 2rem;
     }
 
     #hero img{
         height: 100%;
+    } */
+
+    .heroMySlides {
+        height: 75vh;
+    }
+
+    .heroMySlides img{
+        height: 65vh;
     }
 
     #contacto{

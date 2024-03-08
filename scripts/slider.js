@@ -1,3 +1,28 @@
+/* HERO SLIDE*/
+
+function plusSlidesHero(n) {
+  showSlidesHero(slideIndexHero += n);
+}
+
+var slideIndexHero = 0;
+showSlidesHero();
+
+function showSlidesHero() {
+  var i;
+  var slidesHero = document.querySelectorAll(".heroMySlides");
+  
+  slidesHero.forEach(img => {
+    img.style.display = "none";  
+  });
+
+  slideIndexHero++;
+  if (slideIndexHero > slidesHero.length) {slideIndexHero = 1}    
+  slidesHero[slideIndexHero-1].style.display = "block";  
+  setTimeout(showSlidesHero, 4000); // Cambiar de imagen cada 3 segundos
+}
+
+/* GALERY SLIDE */
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -18,3 +43,4 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 5000); // Cambiar de imagen cada 3 segundos
 }
+
