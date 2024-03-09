@@ -185,6 +185,7 @@ header{
     width: 100%;
     animation: inputAnimationHero .5s ease-in-out 1 forwards;
     z-index: -100;
+    aspect-ratio: 180/83;
 }
 
 @keyframes inputAnimationHero {
@@ -234,7 +235,7 @@ main{
 @keyframes scroollEffect {
     from{
         opacity: 0.5;
-        scale: 60%;
+        scale: 50%;
     }
     70%{
         opacity: 1;
