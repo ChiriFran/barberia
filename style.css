@@ -21,6 +21,7 @@
 body{
     background-color: var(--colorBase);
     font-family: 'oswald';
+    scroll-behavior: smooth;
 }
 
 .progressContainer{
