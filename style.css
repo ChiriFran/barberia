@@ -176,7 +176,7 @@ header{
 }
 
 #intro h1{
-    font-size: clamp( 2rem, 4vw, 4rem);
+    font-size: clamp( 1.2rem, 4vw, 2rem);
     font-weight: 900;
     letter-spacing: 3px;
     margin: 0.5rem 0.5rem;
@@ -185,7 +185,7 @@ header{
 }
 
 #intro h2{
-    font-size: clamp( 1.5rem, 4vw, 2.5rem);
+    font-size: clamp( 1rem, 4vw, 1.5rem);
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--colorText);
@@ -279,7 +279,7 @@ main{
 
 #contacto h3{
     text-transform: uppercase;
-    font-size: clamp( 1rem, 4vw, 2rem);
+    font-size: clamp( 1rem, 4vw, 1.2rem);
     font-weight: 900;
     color: var(--colorBase);
     text-align: center;
@@ -312,7 +312,7 @@ main{
 }
 
 #sobreNosotros h2{
-    font-size: clamp( 1.2rem, 2vw, 1.8rem);
+    font-size: clamp( 1rem, 2vw, 1.2rem);
     text-transform: uppercase;
     color: var(--colorBase);
     margin: 2rem 0;
@@ -354,7 +354,7 @@ main{
 }
 
 #servicios h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0.5rem 0;
     padding: 0.5rem 2rem;
     color: var(--colorBase);
@@ -362,7 +362,7 @@ main{
 }
 
 #servicios p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.5rem 0 2rem;
 }
 
